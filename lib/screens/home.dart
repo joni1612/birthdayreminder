@@ -1,3 +1,4 @@
+import 'package:birthday_reminder_app/screens/birthday.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -11,8 +12,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-      title: Text("Test"),
-    ));
+      appBar: AppBar(
+        title: Text("Test"),
+      ),
+      body: Birthday(),
+    );
   }
 }
